@@ -36,14 +36,14 @@ p.htmlBody = (d) => {
 	let scripts = "";
 	if (helper.isNotEmpty(d.scripts)) {
 		d.scripts.forEach((e) => {
-			scripts += `<script ${e.type?'type="'+e.type+'"':''} src="${e.path}"></script>`;
+			scripts += `<script ${e.type?'type="'+e.type+'"':'text/javascript'} src="${e.path}"></script>`;
 		});
 	}
 	return `
 				<div class="page-div">
 					${body.html(d)}
-					${scripts}
 				</div>
+				${scripts}
 			`;
 };
 
