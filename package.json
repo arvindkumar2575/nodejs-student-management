@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-practice",
+  "name": "nodejs-student-management",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "sqlite3": "^5.0.11"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"

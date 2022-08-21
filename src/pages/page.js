@@ -36,7 +36,7 @@ p.htmlBody = (d) => {
 	let scripts = "";
 	if (helper.isNotEmpty(d.scripts)) {
 		d.scripts.forEach((e) => {
-			scripts += `<script ${e.type?'type="'+e.type+'"':'text/javascript'} src="${e.path}"></script>`;
+			scripts += `<script type="text/javascript src="${e.path}"></script>`;
 		});
 	}
 	return `
@@ -47,7 +47,7 @@ p.htmlBody = (d) => {
 			`;
 };
 
-p.index = (d) => {
+p.html = (d) => {
 	return `${p.doctype}
 	${p.htmlStart}
 	${p.htmlHeadStart}
